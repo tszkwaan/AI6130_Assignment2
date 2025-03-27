@@ -135,8 +135,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py
 
 3. Adapters: `lora`, `adapterP`, `adapterH`
 
-4. Evaluation: `AddSub`, `AQuA`, `SingleEq`
-
+4. Evaluation: `AddSub`, `AQuA`
 ## Example scripts
 
 ### Finetuning
