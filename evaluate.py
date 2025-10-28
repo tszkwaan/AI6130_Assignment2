@@ -30,9 +30,19 @@ def main(
         load_8bit: bool = False,
         base_model: str = "",
         lora_weights: str = "tloen/alpaca-lora-7b",
-        share_gradio: bool = False,
+        dataset: str = "",
+        adapter: str = "",
+        model: str = "LLaMA-7B",
 ):
-    args = parse_args()
+    class Args:
+        pass
+    args = Args()
+    args.adapter = adapter
+    args.dataset = dataset
+    args.base_model = base_model
+    args.lora_weights = lora_weights
+    args.load_8bit = load_8bit
+    args.model = model
 
     def evaluate(
             instruction,
